@@ -1,0 +1,67 @@
+// -----------Color------------
+$primary-color: #131870;
+// $color-menu: #092b9b;
+// $color-submenu: #113abe;
+// $color-active-submenu: #fff;
+$color-menu: #121d33;
+$color-submenu: #223458;
+$color-active-submenu: #285295;
+$purple-color: purple;
+$primary-menu: #c7cacf;
+$gray-font-color: gray;
+$background-view: #1dd61d;
+$background-delete: #ff0000;
+$background-dollar: #ff8204;
+$primary-background: #eef0f3;
+$background-khmer: #008000;
+
+//font
+$font-primary: "Century" !important;
+$font-bayon: "Bayon" !important;
+$font-siemreap: "Siemreap" !important;
+$font-khmer-moul: "KhmerOsMuol" !important;
+$font-public-sans: "PublicSans" !important;
+
+//font-size
+$font-size-14: 14.5px;
+$font-size-15: 15px;
+$font-size-16: 16px;
+$font-size-17: 17px;
+$font-size-18: 18px;
+$font-size-19: 19px;
+
+@mixin desktop {
+  @media (min-width: #{1025px}) and (max-width: #{1650px}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: #{769px}) and (max-width: #{1024px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{426px}) and (max-width: #{768px}) {
+    @content;
+  }
+}
+
+@mixin mobile-large {
+  @media (min-width: #{426px}) and (max-width: #{600px}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (min-width: #{377px}) and (max-width: #{425px}) {
+    @content;
+  }
+}
+
+@mixin mobile-small {
+  @media (min-width : #{0px}) and (max-width: #{376px}) {
+    @content;
+  }
+}

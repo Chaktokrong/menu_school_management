@@ -1,0 +1,43 @@
+@import "../themes.scss";
+
+.icon-mash {
+  color: $primary-color;
+  width: 100px;
+}
+
+.cicle-maker {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  background-color: gray;
+
+  .typography {
+    margin-top: 35%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.marsk {
+  font-weight: bold;
+  font-size: 30;
+  color: gray;
+}
+
+.back-text {
+  color: #fff;
+  // font-family: $font-century;
+  font-weight: bold;
+}
+
+.btn-home {
+  border: 1px solid $primary-color;
+  color: $primary-color;
+  border-radius: 5px;
+  // width: 80px;
+  // margin: 10px 0px;
+  font-size: 12px;
+
+}

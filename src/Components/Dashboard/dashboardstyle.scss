@@ -1,0 +1,304 @@
+@import "../../themes.scss";
+
+.card-container {
+  // ================================ first block =============================
+  .stack-container-first {
+    height: 160px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    background-image: linear-gradient(
+      to right,
+      #3947aa,
+      #4b50b6,
+      #5c5ac3,
+      #6c64cf,
+      #7c6edc
+    );
+    color: #fff;
+    border-radius: 20px;
+    padding: 35px;
+
+    .icon-container {
+      width: 70px;
+      height: 70px;
+      background-color: #fff;
+      border-radius: 50%;
+      .front-icon {
+        width: 60%;
+      }
+    }
+
+    .text-number {
+      font-size: 28px;
+      font-weight: bold;
+      font-family: $font-size-14;
+    }
+
+    .text-title {
+      font-size: $font-size-15;
+      font-weight: bold;
+      font-family: $font-size-14;
+    }
+
+    .text-des {
+      font-size: 14px;
+      font-family: $font-size-14;
+    }
+  }
+
+  // ================================ second block =============================
+  .stack-container-second {
+    height: 160px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    background-image: linear-gradient(
+      to right,
+      #32bad6,
+      #4dc4d9,
+      #63cedd,
+      #78d7e1,
+      #8be1e5
+    );
+
+    color: #fff;
+    border-radius: 20px;
+    padding: 35px;
+
+    .icon-container {
+      width: 70px;
+      height: 70px;
+      background-color: #fff;
+      border-radius: 50%;
+      .front-icon {
+        width: 50%;
+      }
+    }
+
+    .text-number {
+      font-size: 28px;
+      font-weight: bold;
+      font-family: $font-size-14;
+    }
+
+    .text-title {
+      font-size: $font-size-15;
+      font-weight: bold;
+      font-family: $font-size-14;
+    }
+
+    .text-des {
+      font-size: 14px;
+      font-family: $font-size-14;
+    }
+  }
+
+  // ================================ third block =============================
+  .stack-container-third {
+    height: 160px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    background-image: linear-gradient(
+      to right,
+      #5d47f0,
+      #6a62f3,
+      #7a7af4,
+      #8c91f3,
+      #a0a7f0
+    );
+    color: #fff;
+    border-radius: 20px;
+    padding: 35px;
+
+    .icon-container {
+      width: 70px;
+      height: 70px;
+      background-color: #fff;
+      border-radius: 50%;
+      .front-icon {
+        width: 60%;
+      }
+    }
+
+    .text-number {
+      font-size: 28px;
+      font-weight: bold;
+      font-family: $font-size-14;
+    }
+
+    .text-title {
+      font-size: $font-size-15;
+      font-weight: bold;
+      font-family: $font-size-14;
+    }
+
+    .text-des {
+      font-size: 14px;
+      font-family: $font-size-14;
+    }
+  }
+
+  // ================================ fourth block =============================
+  .stack-container-fourth {
+    height: 160px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    background-image: linear-gradient(
+      to right,
+      #f07a47,
+      #f19251,
+      #f1a861,
+      #f1bd75,
+      #f2d08c
+    );
+    color: #fff;
+    border-radius: 20px;
+    padding: 35px;
+
+    .icon-container {
+      width: 70px;
+      height: 70px;
+      background-color: #fff;
+      border-radius: 50%;
+      .front-icon {
+        width: 60%;
+      }
+    }
+
+    .text-number {
+      font-size: 28px;
+      font-weight: bold;
+      font-family: $font-size-14;
+    }
+
+    .text-title {
+      font-size: $font-size-15;
+      font-weight: bold;
+      font-family: $font-size-14;
+    }
+
+    .text-des {
+      font-size: 14px;
+      font-family: $font-size-14;
+    }
+  }
+
+  // ================================ fifth block =============================
+  .stack-container-fifth {
+    height: 160px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    background-image: linear-gradient(
+      to right,
+      #1acb76,
+      #40d388,
+      #5adb9a,
+      #71e3ab,
+      #87ebbb
+    );
+    color: #fff;
+    border-radius: 20px;
+    padding: 35px;
+
+    .icon-container {
+      width: 70px;
+      height: 70px;
+      background-color: #fff;
+      border-radius: 50%;
+      .front-icon {
+        width: 60%;
+      }
+    }
+
+    .text-number {
+      font-size: 28px;
+      font-weight: bold;
+      font-family: $font-size-14;
+    }
+
+    .text-title {
+      font-size: $font-size-15;
+      font-weight: bold;
+      font-family: $font-size-14;
+    }
+
+    .text-des {
+      font-size: 14px;
+      font-family: $font-size-14;
+    }
+  }
+}
+
+// class chart =====================================================
+.chart-container {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  height: 450px;
+
+  .chart-title {
+    font-size: $font-size-16;
+    font-weight: bold !important;
+    font-family: $font-size-14;
+  }
+
+  .chart-title-kh {
+    font-size: $font-size-16;
+    font-weight: bold !important;
+    font-family: $font-siemreap, $font-public-sans;
+  }
+
+  .att-card-status {
+    padding: 6px 0px;
+    // color: #fff;
+    width: 100px;
+    text-align: center;
+    border-radius: 12px;
+    font-size: $font-size-14;
+    font-weight: bold !important;
+    font-family: $font-size-14;
+  }
+
+  .student-card {
+    // height: 70px;
+    padding: 8px 10px;
+    border-radius: 15px;
+    background-color: #f3f2f2;
+
+    .student-name {
+      font-weight: bold !important;
+      font-size: $font-size-15;
+      font-family: $font-size-14;
+    }
+
+    .student-status {
+      font-weight: bold !important;
+      color: #f19251;
+      font-family: $font-size-14;
+      font-size: 14px;
+    }
+
+    .class-name {
+      font-weight: bold !important;
+      // color: #40d388;
+      font-family: $font-size-14;
+      font-size: 14px;
+      text-align: right;
+    }
+  }
+
+  .btn-next {
+    background-color: #4b50b6 !important;
+    color: #fff;
+    width: 100px;
+    padding: 6px 0px;
+    text-align: center;
+    border-radius: 12px;
+    font-size: $font-size-14;
+    font-weight: bold !important;
+    font-family: $font-size-14;
+    text-transform: none;
+  }
+}
+
+// class date =====================================================
+.date-container {
+  padding: 15px;
+  border-radius: 20px;
+  background-color: #2c5fee;
+  height: 400px;
+}

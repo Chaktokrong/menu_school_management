@@ -1,0 +1,475 @@
+@import "../themes.scss";
+
+.page-container {
+  .title-course {
+    color: rgb(99, 99, 99);
+    font-size: $font-size-16;
+    font-family: $font-siemreap, $font-public-sans;
+  }
+
+  .tab-container {
+    border-bottom: 2px solid rgb(219, 219, 219);
+
+    .tab-item {
+      font-weight: bold;
+      color: rgb(99, 99, 99);
+      font-size: $font-size-16;
+      font-family: $font-siemreap, $font-public-sans;
+      border-radius: 0px;
+      text-transform: none;
+      padding-inline: 24px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid transparent;
+    }
+
+    .tab-item-active {
+      font-weight: bold;
+      color: $primary-color;
+      font-size: $font-size-16;
+      font-family: $font-siemreap, $font-public-sans;
+      text-transform: none;
+      padding-inline: 24px;
+      padding-bottom: 8px;
+      border-radius: 0px;
+      border-bottom: 2px solid $primary-color;
+    }
+
+    .tab-item-kh {
+      font-weight: bold;
+      color: rgb(99, 99, 99);
+      font-size: $font-size-16;
+      font-family: $font-siemreap;
+      border-radius: 0px;
+      text-transform: none;
+      padding-inline: 24px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid transparent;
+    }
+
+    .tab-item-active-kh {
+      font-weight: bold;
+      color: $primary-color;
+      font-size: $font-size-16;
+      font-family: $font-siemreap;
+      text-transform: none;
+      padding-inline: 24px;
+      padding-bottom: 8px;
+      border-radius: 0px;
+      border-bottom: 2px solid $primary-color;
+    }
+  }
+
+  .slash {
+    height: 40px;
+    width: 4px;
+    background-color: $primary-color;
+  }
+
+  .page-title {
+    cursor: pointer;
+    font-family: $font-siemreap, $font-public-sans;
+    color: $primary-color;
+    font-size: $font-size-15;
+    font-weight: bold !important;
+  }
+
+  .page-title-kh {
+    cursor: pointer;
+    font-family: $font-siemreap, $font-public-sans;
+    color: $primary-color;
+    font-size: $font-size-15;
+    font-weight: bold !important;
+  }
+
+  .slash-title {
+    font-family: $font-siemreap, $font-public-sans;
+    color: $primary-color;
+    font-size: $font-size-15;
+    font-weight: bold;
+  }
+
+  //======================= tile and label select date=================
+
+  .search-head-title {
+    font-size: $font-size-14;
+    font-family: $font-siemreap, $font-public-sans;
+    color: $primary-color;
+    padding: 0px 0px 5px 5px;
+  }
+
+  .select-date {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 8px;
+    background-color: #fff;
+
+    .MuiOutlinedInput-input {
+      // font-family: $font-siemreap;
+      color: $primary-color;
+    }
+
+    .css-1ua80n0-MuiInputBase-input-MuiOutlinedInput-input {
+      color: $primary-color;
+    }
+
+    .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+      border-color: #fff;
+
+      border-radius: 6px;
+    }
+
+    .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-input {
+      border-radius: 6px;
+      color: $primary-color;
+    }
+
+    .MuiInputLabel-root.Mui-focused {
+      border-radius: 6px;
+      color: $primary-color;
+    }
+  }
+
+  .inactive-tab {
+    font-family: $font-siemreap, $font-public-sans;
+    font-weight: bold;
+    border-radius: 0;
+    color: rgba(0, 0, 0, 0.6);
+    border-bottom: 2px solid transparent;
+  }
+
+  .active-tab {
+    border-radius: 0;
+    color: $primary-color;
+    font-family: $font-siemreap, $font-public-sans;
+    border-bottom: 2px solid $primary-color;
+    font-weight: bold;
+  }
+
+  // =================== end details page ===================
+
+  .text-field-title {
+    width: 130px !important;
+    color: $primary-color;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    font-size: $font-size-15;
+    font-family: $font-siemreap, $font-public-sans;
+    font-weight: 100 !important;
+  }
+
+  .text-field-title-kh {
+    width: 130px !important;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    color: $primary-color;
+    font-size: $font-size-15;
+    font-family: $font-siemreap;
+    font-weight: 100 !important;
+  }
+
+  .text-field {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 6px;
+
+    .css-nu79wc-MuiInputAdornment-root {
+      color: $primary-color !important;
+    }
+
+    .css-e2mtqw-MuiInputAdornment-root {
+      color: $primary-color !important;
+    }
+
+    .MuiOutlinedInput-input {
+      color: $primary-color;
+    }
+
+    .css-1ua80n0-MuiInputBase-input-MuiOutlinedInput-input {
+      color: $primary-color;
+    }
+
+    .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+      border-color: #fff;
+      border-radius: 6px;
+      color: $primary-color;
+    }
+
+    .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-input {
+      color: $primary-color !important;
+      border-radius: 6px !important;
+    }
+
+    .MuiInputLabel-root.Mui-focused {
+      color: $primary-color;
+      border-radius: 6px;
+    }
+  }
+
+  .btn-create {
+    font-family: $font-siemreap;
+    font-size: $font-size-14;
+    background-color: $primary-color !important;
+    color: #fff;
+    border-radius: 10px;
+    padding: 8px 30px;
+    height: 100%;
+
+    .icon-add {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .body-container {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 0px 0px 20px 0px;
+
+    @include mobile-small {
+      width: 310px !important;
+    }
+
+    @include mobile {
+      width: 370px !important;
+    }
+
+    @include mobile-large {
+      width: 476px !important;
+    }
+
+    .table {
+      width: 100%;
+      display: table;
+      overflow-x: auto;
+      white-space: nowrap;
+      border-collapse: separate;
+      border-spacing: 0px 6px;
+
+      .header-row {
+        background-color: #fff;
+        padding: 10px 0px;
+
+        .border-title {
+          width: 80%;
+          border-bottom: 1px solid #131870;
+          margin-top: -10px !important;
+        }
+
+        .header-title-start {
+          border-radius: 5px 0px 0px 5px;
+          padding: 10px 10px 10px 20px;
+          border: none;
+          font-family: $font-siemreap, $font-public-sans !important;
+          font-size: $font-size-15;
+          color: $primary-color;
+          background-color: #fff;
+        }
+
+        .header-title-start-kh {
+          border-radius: 5px 0px 0px 5px;
+          padding: 10px 10px 10px 20px;
+          border: none;
+          font-family: $font-siemreap !important;
+          font-size: $font-size-15;
+          color: $primary-color;
+          background-color: #fff;
+        }
+
+        .header-title {
+          border: none;
+          color: $primary-color;
+          padding: 10px 10px 10px 20px;
+          font-family: $font-siemreap, $font-public-sans;
+          font-size: $font-size-15;
+          background-color: #fff;
+        }
+
+        .header-title-kh {
+          border: none;
+          color: $primary-color;
+          padding: 10px 10px 10px 20px;
+          font-family: $font-siemreap;
+          font-size: $font-size-15;
+          background-color: #fff;
+        }
+
+        .header-title-end {
+          border-radius: 0px 5px 5px 0px;
+          padding: 10px 20px 10px 0px;
+          border: none;
+          font-family: $font-siemreap, $font-public-sans;
+          font-size: $font-size-15;
+          color: $primary-color;
+          background-color: #fff;
+        }
+
+        .header-title-end-kh {
+          border-radius: 0px 5px 5px 0px;
+          padding: 10px 20px 10px 0px;
+          border: none;
+          font-family: $font-siemreap;
+          font-size: $font-size-15;
+          color: $primary-color;
+          background-color: #fff;
+        }
+      }
+
+      .body {
+        background-color: #fff;
+        box-shadow: none;
+
+        :hover {
+          background-color: rgb(245, 245, 245);
+          transition: background-color 0.3s !important;
+        }
+
+        .body-row {
+          height: 50px;
+          cursor: pointer;
+
+          .body-cell-start {
+            border: none;
+            font-family: $font-siemreap, $font-public-sans;
+            font-size: $font-size-14;
+            padding: 0px 6px 0px 20px;
+            border-radius: 5px 0px 0px 5px;
+          }
+
+          .body-cell-start-complete {
+            border: none;
+            font-family: $font-siemreap, $font-public-sans;
+            font-size: $font-size-14;
+            padding: 0px 6px 0px 20px;
+            border-radius: 5px 0px 0px 5px;
+            background-color: #ff242a26 !important;
+          }
+
+          .body-cell-start-void {
+            border: none;
+            font-family: $font-siemreap, $font-public-sans;
+            font-size: $font-size-14;
+            padding: 0px 6px 0px 20px;
+            border-radius: 5px 0px 0px 5px;
+            border-right: 4px solid red;
+          }
+
+          .body-cell {
+            border: none;
+            font-family: $font-siemreap, $font-public-sans;
+            font-size: $font-size-14;
+            padding: 0px 6px 0px 20px;
+
+            .Paid {
+              display: inline;
+              color: #039470;
+              border: 1px solid #039470;
+              min-width: 90px;
+              font-size: 14px;
+              text-align: center;
+              border-radius: 6px;
+              padding: 3px 10px;
+            }
+
+            .Owe {
+              display: inline;
+              color: #ff242a;
+              border: 1px solid #ff242a;
+              min-width: 90px;
+              font-size: 14px;
+              text-align: center;
+              border-radius: 6px;
+              padding: 3px 10px;
+            }
+
+            .student-name {
+              font-family: $font-siemreap, $font-public-sans;
+              font-size: $font-size-14 !important;
+            }
+          }
+
+          .body-cell-complete {
+            border: none;
+            font-family: $font-siemreap, $font-public-sans;
+            font-size: $font-size-14;
+            padding: 0px 6px 0px 20px;
+            background-color: #ff242a26 !important;
+
+            .Paid {
+              display: inline;
+              color: #039470;
+              border: 1px solid #039470;
+              min-width: 90px;
+              font-size: 14px;
+              text-align: center;
+              border-radius: 6px;
+              padding: 3px 10px;
+            }
+
+            .Owe {
+              display: inline;
+              color: #ff242a;
+              border: 1px solid #ff242a;
+              min-width: 90px;
+              font-size: 14px;
+              text-align: center;
+              border-radius: 6px;
+              padding: 3px 10px;
+            }
+
+            .student-name {
+              font-family: $font-siemreap, $font-public-sans;
+              font-size: $font-size-14 !important;
+            }
+          }
+
+          .body-cell-end {
+            border: none;
+            font-family: $font-siemreap, $font-public-sans;
+            font-size: $font-size-14;
+            padding: 6px 20px 6px 0px;
+            border-radius: 0px 5px 5px 0px;
+          }
+
+          .body-cell-end-complete {
+            border: none;
+            font-family: $font-siemreap, $font-public-sans;
+            font-size: $font-size-14;
+            padding: 6px 20px 6px 0px;
+            border-radius: 0px 5px 5px 0px;
+            background-color: #ff242a26 !important;
+          }
+
+          .body-cell-start-void {
+            border: none;
+            font-family: $font-siemreap, $font-public-sans;
+            font-size: $font-size-14;
+            padding: 0px 6px 0px 20px;
+            border-radius: 6px 0px 0px 6px;
+            background-color: rgb(240, 236, 236);
+          }
+
+          .body-cell-void {
+            border: none;
+            font-family: $font-siemreap, $font-public-sans;
+            font-size: $font-size-14;
+            padding: 0px 6px 0px 20px;
+            background-color: rgb(240, 236, 236);
+          }
+
+          .body-cell-end-void {
+            border: none;
+            font-family: $font-siemreap, $font-public-sans;
+            font-size: $font-size-14;
+            padding: 6px 20px 6px 0px;
+            border-radius: 0px 6px 6px 0px;
+            background-color: rgb(240, 236, 236);
+          }
+        }
+      }
+
+      //body complete class ===============================================
+    }
+  }
+}

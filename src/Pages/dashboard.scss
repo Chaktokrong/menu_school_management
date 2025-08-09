@@ -1,0 +1,127 @@
+@import "../themes.scss";
+
+.dashboard-page {
+  padding-bottom: 20px;
+  .slash {
+    width: 4px;
+    height: 45px;
+    background-color: $primary-color;
+  }
+
+  .color {
+    color: $primary-color;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .make {
+    align-items: center;
+    justify-content: flex-start;
+    direction: row;
+  }
+
+  .left-icon {
+    display: flex;
+    direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .employee-overview-header {
+    color: gray;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold !important;
+  }
+
+  .search-head-title {
+    font-size: $font-size-14;
+    // font-family: $font-century;
+    color: $primary-color;
+    padding: 0px 0px 5px 5px;
+  }
+
+  .search-field {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 6px;
+    // font-family: $font-century;
+
+    // .css-1ua80n0-MuiInputBase-input-MuiOutlinedInput-input {
+    //   font-family: $font-siemreap;
+    // }
+
+    // .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+    //   border-color: #fff;
+    //   font-family: $font-siemreap;
+    //   border-radius: 6px;
+    // }
+
+    // .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-input {
+    //   font-family: $font-siemreap;
+    //   border-radius: 6px;
+    // }
+
+    // .MuiInputLabel-root.Mui-focused {
+    //   font-family: $font-siemreap;
+    //   border-radius: 6px;
+    // }
+
+    // .supplier-detail-box {
+    //   justify-content: space-between;
+    // }
+
+    //===
+    .css-nu79wc-MuiInputAdornment-root {
+      color: $primary-color !important;
+      font-weight: bold !important;
+    }
+
+    .css-e2mtqw-MuiInputAdornment-root {
+      color: $primary-color !important;
+      font-weight: bold !important;
+    }
+
+    .MuiOutlinedInput-input {
+      font-weight: bold;
+      color: $primary-color;
+      font-family: $font-siemreap;
+      // border-radius: 6px;
+    }
+
+    .css-1ua80n0-MuiInputBase-input-MuiOutlinedInput-input {
+      font-family: $font-siemreap;
+      font-weight: bold;
+      color: $primary-color;
+    }
+
+    .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+      border-color: #fff;
+      font-family: $font-siemreap;
+      border-radius: 6px;
+      font-weight: bold;
+      color: $primary-color;
+    }
+
+    .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-input {
+      font-weight: bold !important;
+      color: $primary-color !important;
+      font-family: $font-siemreap !important;
+      border-radius: 6px !important;
+    }
+
+    .MuiInputLabel-root.Mui-focused {
+      font-weight: bold;
+      color: $primary-color;
+      font-family: $font-siemreap;
+      border-radius: 6px;
+    }
+
+    .supplier-detail-box {
+      justify-content: space-between;
+    }
+
+    //===
+  }
+}

@@ -1,0 +1,26 @@
+@import "../../../themes.scss";
+
+.empty-container {
+  background-color: white !important;
+  
+  .text-title {
+    margin-top: 10px;
+    font-family: $font-siemreap, $font-public-sans;
+    font-size: $font-size-15;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(182, 181, 181);
+  }
+
+  .empty-image {
+    width: 20%;
+    height: auto;
+  }
+
+  .text-des {
+    font-family: $font-siemreap, $font-public-sans;
+    font-size: $font-size-14;
+    text-align: center;
+    color: gray;
+  }
+}

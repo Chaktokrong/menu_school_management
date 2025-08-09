@@ -1,0 +1,157 @@
+@import "../themes.scss";
+
+.view-container {
+  width: 24px;
+  height: 24px;
+  border-radius: 8px;
+  background-color: $primary-color !important;
+
+  .view-icon {
+    color: #fff;
+    margin-bottom: 2px;
+    font-size: 15px !important;
+    &:hover {
+      background-color: $primary-color !important;
+    }
+  }
+}
+
+
+.add-container {
+  width: 24px;
+  height: 24px;
+  border-radius: 8px;
+  background-color: $background-khmer !important;
+
+  .add-icon {
+    color: #fff;
+    margin-bottom: 3px;
+    font-size: 14px !important;
+
+    &:hover {
+      background-color: $background-khmer !important;
+    }
+  }
+}
+
+.update-container {
+  width: 24px;
+  height: 24px;
+  border-radius: 8px;
+  background-color: $background-dollar !important;
+
+  .update-icon {
+    color: #fff;
+    margin-bottom: 3px;
+    font-size: 14px !important;
+
+    &:hover {
+      background-color: $background-dollar !important;
+    }
+  }
+}
+
+.payment-container {
+  width: 24px;
+  height: 24px;
+  border-radius: 8px;
+  background-color: green !important;
+
+  .payment-icon {
+    color: #fff;
+    margin-bottom: 2px;
+    font-size: 16px !important;
+
+    &:hover {
+      background-color: green !important;
+    }
+  }
+}
+
+.void-container {
+  width: 24px;
+  height: 24px;
+  border-radius: 8px;
+  background-color: $background-delete !important;
+
+  .void-icon {
+    color: #fff;
+    margin-bottom: 3px;
+    font-size: 14px !important;
+
+    &:hover {
+      background-color: $background-delete !important;
+    }
+  }
+}
+
+.delete-action-container {
+  width: 24px;
+  height: 24px;
+  border-radius: 8px;
+  background-color: $background-delete !important;
+
+  .delete-action-icon {
+    color: #fff;
+    margin-bottom: 4px;
+    font-size: 14px !important;
+
+    &:hover {
+      background-color: $background-delete !important;
+    }
+  }
+}
+
+// .btn-void-disabled {
+//   border-radius: 8px;
+//   height: 28px !important;
+//   color: #fff !important;
+//   font-size: 12px !important;
+//   background-color: gray !important;
+// }
+
+// .btn-void {
+//   border-radius: 8px;
+//   height: 28px !important;
+//   font-size: 12px !important;
+//   background-color: $background-delete !important;
+//   color: #fff;
+// }
+
+// .save-container {
+//   width: 24px;
+//   height: 24px;
+//   .save-icon {
+//     width: 22px;
+//     color: $primary-color;
+//   }
+
+//   .refund-icon {
+//     width: 22px;
+//     color: orange;
+//   }
+// }
+
+.delete-container {
+  width: 24px;
+  height: 24px;
+  .delete-icon {
+    color: $background-delete;
+    margin-bottom: 4px;
+  }
+}
+
+// .delete-icon {
+//   color: $background-delete;
+//   font-size: 26px !important;
+// }
+
+// .btn-void {
+//   height: 28px !important;
+//   border-radius: 5px !important;
+//   background-color: $background-delete !important;
+//   color: #fff !important;
+//   padding: 2px 10px !important;
+//   font-family: $font-siemreap;
+//   font-size: 13px;
+// }

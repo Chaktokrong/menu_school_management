@@ -1,0 +1,346 @@
+@import "../themes.scss";
+
+.dialog-container {
+  .css-1qqsdnr-MuiAutocomplete-root .MuiAutocomplete-tag {
+    background-color: $primary-color;
+    color: #fff;
+    border-radius: 10px !important;
+  }
+
+  .css-eem9g9-MuiButtonBase-root-MuiChip-root .MuiChip-deleteIcon {
+    color: #fff !important;
+  }
+
+  .MuiPaper-root {
+    border-radius: 10px !important;
+  }
+
+  .dialog-title {
+    color: $primary-color;
+    font-size: $font-size-16;
+    font-family: $font-bayon;
+  }
+
+  .close-icon {
+    color: red;
+  }
+
+  .avater-image {
+    width: 150px;
+    height: 170px;
+    border-radius: 10px;
+    object-fit: cover !important;
+  }
+
+  .field-title {
+    font-family: $font-public-sans;
+    font-size: $font-size-14;
+    color: $primary-color;
+    margin-bottom: 2px;
+    min-height: 24px !important;
+  }
+
+  .field-title-kh {
+    font-family: $font-siemreap;
+    font-size: $font-size-14;
+    color: $primary-color;
+    margin-bottom: 2px;
+    min-height: 24px !important;
+  }
+
+  .icon-add {
+    color: $primary-color;
+  }
+
+  .viewpw-icon {
+    cursor: pointer;
+  }
+
+  .text-field {
+    background-color: #fff;
+    // border-radius: 10px;
+
+    .MuiOutlinedInput-input {
+      color: black !important;
+      font-family: $font-siemreap, $font-public-sans;
+    }
+
+    .MuiInputLabel-root {
+      color: black !important;
+      background-color: #fff;
+      font-family: $font-siemreap, $font-public-sans;
+    }
+
+    .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+      font-size: $font-size-15;
+      font-family: $font-siemreap, $font-public-sans;
+      color: black;
+    }
+
+    :hover .MuiOutlinedInput-input {
+      color: #fff;
+      font-size: $font-size-15;
+      font-family: $font-siemreap, $font-public-sans;
+    }
+
+    :hover .MuiInputLabel-root {
+      color: black;
+      font-size: $font-size-15;
+      font-family: $font-siemreap, $font-public-sans;
+    }
+
+    :hover .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+      font-size: $font-size-15;
+      font-family: $font-siemreap, $font-public-sans;
+    }
+
+    .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-input {
+      color: black;
+      font-size: $font-size-15;
+      font-family: $font-siemreap, $font-public-sans;
+    }
+
+    .MuiInputLabel-root.Mui-focused {
+      color: black;
+      font-family: $font-siemreap, $font-public-sans;
+      font-size: $font-size-15;
+    }
+
+    .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+      font-family: $font-siemreap, $font-public-sans;
+      font-size: $font-size-15;
+    }
+  }
+
+  .btn-create {
+    padding: 8px 0px;
+    background-color: $primary-color !important;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: none;
+    white-space: pre;
+  }
+
+  .btn-create-kh {
+    padding: 8px 0px;
+    background-color: $primary-color !important;
+    color: #fff;
+    border-radius: 5px;
+    font-family: $font-bayon;
+    box-shadow: none;
+  }
+
+  .btn-delete {
+    padding: 8px 0px;
+    background-color: $background-delete !important;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: none;
+  }
+
+  .btn-delete-kh {
+    padding: 8px 0px;
+    background-color: $background-delete !important;
+    color: #fff;
+    border-radius: 5px;
+    font-family: $font-bayon;
+    font-weight: bold !important;
+  }
+
+  .btn-print {
+    background-color: $primary-color !important;
+    font-size: $font-size-15;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .btn-save {
+    background-color: $primary-color !important;
+    border-radius: 10px;
+    font-size: $font-size-15;
+    color: #fff !important;
+    text-align: center;
+    padding: 6px 20px;
+    font-weight: bold;
+
+    .icon-add {
+      color: #fff;
+    }
+  }
+
+  //table style ============================================================
+
+  .table {
+    width: 100%;
+    display: table;
+    overflow-x: auto;
+    white-space: nowrap;
+    border-collapse: separate;
+    border-spacing: 0px 6px;
+
+    .header-row {
+      background-color: #fff;
+      padding: 10px 0px;
+
+      .border-title {
+        width: 80%;
+        border-bottom: 1px solid #131870;
+        margin-top: -10px !important;
+      }
+
+      .header-title-start {
+        border-radius: 5px 0px 0px 5px;
+        padding: 10px 10px 10px 20px;
+        border: none;
+        font-family: $font-siemreap, $font-public-sans !important;
+        font-size: $font-size-15;
+        color: $primary-color;
+        background-color: #fff;
+      }
+
+      .header-title-start-kh {
+        border-radius: 5px 0px 0px 5px;
+        padding: 10px 10px 10px 20px;
+        border: none;
+        font-family: $font-siemreap !important;
+        font-size: $font-size-15;
+        color: $primary-color;
+        background-color: #fff;
+      }
+
+      .header-title {
+        border: none;
+        color: $primary-color;
+        padding: 10px 10px 10px 20px;
+        font-family: $font-siemreap, $font-public-sans;
+        font-size: $font-size-15;
+        background-color: #fff;
+      }
+
+      .header-title-kh {
+        border: none;
+        color: $primary-color;
+        padding: 10px 10px 10px 20px;
+        font-family: $font-siemreap;
+        font-size: $font-size-15;
+        background-color: #fff;
+      }
+
+      .header-title-end {
+        border-radius: 0px 5px 5px 0px;
+        padding: 10px 20px 10px 0px;
+        border: none;
+        font-family: $font-siemreap, $font-public-sans;
+        font-size: $font-size-15;
+        color: $primary-color;
+        background-color: #fff;
+      }
+
+      .header-title-end-kh {
+        border-radius: 0px 5px 5px 0px;
+        padding: 10px 20px 10px 0px;
+        border: none;
+        font-family: $font-siemreap;
+        font-size: $font-size-15;
+        color: $primary-color;
+        background-color: #fff;
+      }
+    }
+
+    .body {
+      background-color: #fff;
+      box-shadow: none;
+
+      :hover {
+        background-color: rgb(245, 245, 245);
+        transition: background-color 0.3s !important;
+      }
+
+      .body-row {
+        height: 50px;
+        cursor: pointer;
+
+        .body-cell-start {
+          border: none;
+          font-family: $font-siemreap, $font-public-sans;
+          font-size: $font-size-14;
+          padding: 0px 6px 0px 20px;
+          border-radius: 5px 0px 0px 5px;
+        }
+
+        .body-cell {
+          border: none;
+          font-family: $font-siemreap, $font-public-sans;
+          font-size: $font-size-14;
+          padding: 0px 6px 0px 20px;
+
+          .student-name {
+            font-family: $font-siemreap, $font-public-sans;
+            font-size: $font-size-14 !important;
+          }
+
+          .present {
+            font-size: 15px;
+            font-weight: bolder;
+            color: #0200f6;
+          }
+
+          .absent {
+            font-size: 15px;
+            font-weight: bolder;
+            color: #fe0000;
+          }
+
+          .late {
+            font-size: 15px;
+            font-weight: bolder;
+            color: #03ad52;
+          }
+
+          .permission {
+            font-size: 15px;
+            font-weight: bolder;
+            color: #ffc000;
+          }
+        }
+
+        .body-cell-end {
+          border: none;
+          font-family: $font-siemreap, $font-public-sans;
+          font-size: $font-size-14;
+          padding: 6px 20px 6px 0px;
+          border-radius: 0px 5px 5px 0px;
+        }
+
+        .body-cell-start-void {
+          border: none;
+          font-family: $font-siemreap, $font-public-sans;
+          font-size: $font-size-14;
+          padding: 0px 6px 0px 20px;
+          border-radius: 6px 0px 0px 6px;
+          background-color: #ff242a26 !important;
+        }
+
+        .body-cell-void {
+          border: none;
+          font-family: $font-siemreap, $font-public-sans;
+          font-size: $font-size-14;
+          padding: 0px 6px 0px 20px;
+          background-color: #ff242a26 !important;
+        }
+
+        .body-cell-end-void {
+          border: none;
+          font-family: $font-siemreap, $font-public-sans;
+          font-size: $font-size-14;
+          padding: 6px 20px 6px 0px;
+          border-radius: 0px 6px 6px 0px;
+          background-color: #ff242a26 !important;
+        }
+      }
+    }
+
+    //body complete class ===============================================
+  }
+}

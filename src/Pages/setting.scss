@@ -1,0 +1,67 @@
+@import "../themes.scss";
+
+.setting-page {
+  .page-header {
+    height: 40px;
+
+    .slash {
+      height: 40px;
+      width: 4px;
+      background-color: $primary-color;
+    }
+
+    .page-title {
+      font-family: $font-siemreap, $font-public-sans;
+      color: $primary-color;
+      font-size: $font-size-16;
+      font-weight: bold !important;
+    }
+
+    .breadcrumbs-title {
+      font-family: $font-siemreap, $font-public-sans;
+      color: black;
+      font-size: $font-size-14;
+    }
+
+    .page-link-title {
+      font-family: $font-siemreap, $font-public-sans;
+      color: $primary-color;
+      font-size: $font-size-14;
+      text-decoration: none;
+
+      cursor: pointer;
+    }
+  }
+
+  .setting-page-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    height: 120px;
+
+    .image {
+      width: 40px;
+      height: 40px;
+    }
+
+    .page-title {
+      margin: 10px 0px;
+      font-family: $font-siemreap;
+      font-size: 17px;
+      color: $primary-color;
+      font-weight: bold;
+    }
+
+    .page-description {
+      width: 100%;
+      font-family: $font-siemreap;
+      font-size: 14px;
+      color: $primary-color;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: pre-line;
+      display: -webkit-box;
+      color: #191919;
+    }
+  }
+}

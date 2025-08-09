@@ -1,0 +1,97 @@
+@import "../themes.scss";
+
+.layout-container {
+  background-color: $color-submenu;
+  width: 100%;
+
+  .navbar-container {
+    width: 310px;
+    position: fixed;
+  }
+
+  .left-side-container {
+    width: 100%;
+    height: 90vh;
+    margin-left: 310px;
+    // padding: 15px 0px;
+    // border-top: 10px solid blue;
+    // background-color: blue;
+
+    .top-bar {
+      // background-color: $color-submenu;
+      border-bottom: 1px solid rgb(223, 221, 221);
+    }
+
+    .supLeft-side-container {
+      width: 100%;
+      background-color: #ebedef;
+      // border-top-left-radius: 20px;
+      // border-top-right-radius: 20px;
+      // border-radius: 25px;
+
+      .outlet-container {
+        padding: 20px;
+        background-repeat: no-repeat;
+        background-image: url("../Assets/angkor-picture.png");
+        background-attachment: fixed;
+        height: 90vh;
+        background-size: 80%;
+        background-position: 80% 50%;
+
+        @include desktop {
+          background-size: 80%;
+          background-position: 80% 18%;
+          // background-color: green;
+        }
+        @include laptop {
+          background-size: 90%;
+          background-position: 120% 14%;
+          // background-color: blue;
+        }
+        @include tablet {
+          background-size: 90%;
+          background-position: 120% 12%;
+          // background-color: gray;
+        }
+        @include mobile-large {
+          background-size: 140%;
+          background-position: 50% 11%;
+        }
+      }
+    }
+  }
+}
+
+.backdrop-style {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 30%,
+    rgba(221, 233, 243, 1) 100%
+  );
+
+  .background-image {
+    // background-image: url("../Assets/angkor-picture.png");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: 50% 50%;
+    position: fixed;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .system-title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: $primary-background;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .power-title {
+    font-weight: bold;
+    color: $primary-background;
+  }
+}
