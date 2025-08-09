@@ -78,8 +78,7 @@ export default function Router({ prefersDarkMode, setPrefersDarkMode }) {
       children: [
         { path: "/", element: <Navigate to="/academic-dasboard" /> },
         { path: "/academic-dasboard", element: <Dashboard /> },
-        { path: "/academic-section-shift", element: <Dashboard /> },
-        // { path: "/academic-dasboard", element: <Dashboard /> },
+        { path: "/student-info-dashboard", element: <Dashboard /> },
         // { path: "/setting", element: <Setting /> },
         // { path: "/setting/user", element: <User /> },
         { path: "*", element: <Page404 /> },

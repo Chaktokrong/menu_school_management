@@ -105,7 +105,6 @@
   .sub-menu {
     width: 100%;
     background-color: $color-submenu;
-    height: 100vh;
     padding: 10px;
 
     .main-title {
@@ -116,55 +115,62 @@
       font-weight: bold;
     }
 
-    .subMenu-list-item-active {
-      width: 100%;
-      height: 38px;
-      border-radius: 10px;
-      padding-left: 14px;
-      background-color: $color-active-submenu;
-      cursor: pointer;
+    .sub-menu-body {
+      height: 100%;
+      max-height: 100vh; /* Don't go beyond viewport height */
+      overflow-y: auto; /* Enable vertical scroll */
+      scrollbar-width: thin;
 
-      .icon {
-        font-size: 20px;
-        color: #fff;
-        // color: $primary-color;
-      }
-
-      .list-item-text {
-        font-family: $font-primary;
-        font-size: $font-size-14;
-        font-weight: bold;
-        color: #fff;
-        // color: $primary-color;
-        padding-top: 2px;
-      }
-    }
-
-    .subMenu-list-item {
-      width: 100%;
-      height: 38px;
-      padding-left: 14px;
-      cursor: pointer;
-
-      .icon {
-        font-size: 20px;
-        color: #fff;
-      }
-
-      .list-item-text {
-        font-family: $font-primary;
-        font-size: $font-size-14;
-        font-weight: bold;
-        padding-top: 2px;
-        color: #fff;
-      }
-
-      .expand-icon {
-        width: 21px;
-        height: 21px;
-        border-radius: 5px;
+      .subMenu-list-item-active {
+        width: 100%;
+        height: 38px;
+        border-radius: 10px;
+        padding-left: 14px;
         background-color: $color-active-submenu;
-        // background-color: #214e96;
+        cursor: pointer;
+
+        .icon {
+          font-size: 20px;
+          color: #fff;
+          // color: $primary-color;
+        }
+
+        .list-item-text {
+          font-family: $font-primary;
+          font-size: $font-size-14;
+          font-weight: bold;
+          color: #fff;
+          // color: $primary-color;
+          padding-top: 2px;
+        }
+      }
+
+      .subMenu-list-item {
+        width: 100%;
+        height: 38px;
+        padding-left: 14px;
+        cursor: pointer;
+
+        .icon {
+          font-size: 20px;
+          color: #fff;
+        }
+
+        .list-item-text {
+          font-family: $font-primary;
+          font-size: $font-size-14;
+          font-weight: bold;
+          padding-top: 2px;
+          color: #fff;
+        }
+
+        .expand-icon {
+          width: 21px;
+          height: 21px;
+          border-radius: 5px;
+          background-color: $color-active-submenu;
+          // background-color: #214e96;
+        }
       }
     }
   }

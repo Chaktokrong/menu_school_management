@@ -104,131 +104,133 @@ export default function Menu() {
         </Stack>
 
         {/* ========================================= Sub Menu ============================================== */}
+
         <Stack direction="column" spacing={6} className="sub-menu">
           <Typography className="main-title">{subMenu?.name}</Typography>
+          <Box className="sub-menu-body">
+            <Stack direction="column" spacing={0.5}>
+              {subMenu?.subMenuData?.map((menu) => {
+                const collapseMenu = menuCollapseData.find(
+                  (c) => menu.subName === c.subName
+                );
 
-          <Stack direction="column" spacing={0.5}>
-            {subMenu?.subMenuData?.map((menu) => {
-              const collapseMenu = menuCollapseData.find(
-                (c) => menu.subName === c.subName
-              );
-
-              return (
-                <Fragment key={menu.subName}>
-                  {!menu.isCollapse ? (
-                    // ========================================== Normal sub menu ===================================
-                    <ListItem
-                      disablePadding
-                      onClick={() => {
-                        navigate(menu.route);
-                        setOpenCollapse({});
-                      }}
-                      className={
-                        location.pathname === menu.route
-                          ? "subMenu-list-item-active"
-                          : "subMenu-list-item"
-                      }
-                    >
-                      <Stack direction="row" spacing={1.4}>
-                        <Stack direction="column" justifyContent="center">
-                          {menu.icon}
-                        </Stack>
-                        <Typography className="list-item-text">
-                          {menu.subName}
-                        </Typography>
-                      </Stack>
-                    </ListItem>
-                  ) : (
-                    // ========================================== Collapsible sub menu =================================
-                    <ListItem
-                      disablePadding
-                      onClick={() => toggleCollapse(menu.subName)}
-                      className="subMenu-list-item"
-                    >
-                      <Stack
-                        direction="row"
-                        justifyContent="space-between"
-                        sx={{ width: "100%", marginRight: "14px" }}
+                return (
+                  <Fragment key={menu.subName}>
+                    {!menu.isCollapse ? (
+                      // ========================================== Normal sub menu ===================================
+                      <ListItem
+                        disablePadding
+                        onClick={() => {
+                          navigate(menu.route);
+                          setOpenCollapse({});
+                        }}
+                        className={
+                          location.pathname === menu.route
+                            ? "subMenu-list-item-active"
+                            : "subMenu-list-item"
+                        }
                       >
                         <Stack direction="row" spacing={1.4}>
-                          {/* <Stack direction="column" justifyContent="center">
+                          <Stack direction="column" justifyContent="center">
                             {menu.icon}
-                          </Stack> */}
-                          {openCollapse[menu.subName] ? (
-                            <Stack
-                              direction="column"
-                              justifyContent="center"
-                              alignItems="center"
-                              className="expand-icon"
-                            >
-                              <ExpandMore
-                                style={{ color: "#fff", fontSize: "20px" }}
-                              />
-                            </Stack>
-                          ) : (
-                            <Stack
-                              direction="column"
-                              justifyContent="center"
-                              alignItems="center"
-                              className="expand-icon"
-                            >
-                              <ExpandLess
-                                style={{ color: "#fff", fontSize: "20px" }}
-                              />
-                            </Stack>
-                          )}
+                          </Stack>
                           <Typography className="list-item-text">
                             {menu.subName}
                           </Typography>
                         </Stack>
-                      </Stack>
-                    </ListItem>
-                  )}
-
-                  {/* ======================================= Collapse items ================================================ */}
-                  {menu.isCollapse &&
-                    collapseMenu?.collapseData?.length > 0 && (
-                      <Collapse
-                        in={openCollapse[menu.subName]}
-                        timeout="auto"
-                        unmountOnExit
+                      </ListItem>
+                    ) : (
+                      // ========================================== Collapsible sub menu =================================
+                      <ListItem
+                        disablePadding
+                        onClick={() => toggleCollapse(menu.subName)}
+                        className="subMenu-list-item"
                       >
-                        <Stack direction="column" spacing={1}>
-                          {collapseMenu.collapseData.map((row) => (
-                            <ListItem
-                              key={row.route}
-                              disablePadding
-                              onClick={() => navigate(row.route)}
-                              className={
-                                location.pathname === row.route
-                                  ? "subMenu-list-item-active"
-                                  : "subMenu-list-item"
-                              }
-                            >
+                        <Stack
+                          direction="row"
+                          justifyContent="space-between"
+                          sx={{ width: "100%", marginRight: "14px" }}
+                        >
+                          <Stack direction="row" spacing={1.4}>
+                            {/* <Stack direction="column" justifyContent="center">
+                            {menu.icon}
+                          </Stack> */}
+                            {openCollapse[menu.subName] ? (
                               <Stack
-                                direction="row"
-                                spacing={1.4}
-                                sx={{ paddingLeft: "14px" }}
+                                direction="column"
+                                justifyContent="center"
+                                alignItems="center"
+                                className="expand-icon"
+                              >
+                                <ExpandMore
+                                  style={{ color: "#fff", fontSize: "20px" }}
+                                />
+                              </Stack>
+                            ) : (
+                              <Stack
+                                direction="column"
+                                justifyContent="center"
+                                alignItems="center"
+                                className="expand-icon"
+                              >
+                                <ExpandLess
+                                  style={{ color: "#fff", fontSize: "20px" }}
+                                />
+                              </Stack>
+                            )}
+                            <Typography className="list-item-text">
+                              {menu.subName}
+                            </Typography>
+                          </Stack>
+                        </Stack>
+                      </ListItem>
+                    )}
+
+                    {/* ======================================= Collapse items ================================================ */}
+                    {menu.isCollapse &&
+                      collapseMenu?.collapseData?.length > 0 && (
+                        <Collapse
+                          in={openCollapse[menu.subName]}
+                          timeout="auto"
+                          unmountOnExit
+                        >
+                          <Stack direction="column" spacing={1}>
+                            {collapseMenu.collapseData.map((row) => (
+                              <ListItem
+                                key={row.route}
+                                disablePadding
+                                onClick={() => navigate(row.route)}
+                                className={
+                                  location.pathname === row.route
+                                    ? "subMenu-list-item-active"
+                                    : "subMenu-list-item"
+                                }
                               >
                                 <Stack
-                                  direction="column"
-                                  justifyContent="center"
+                                  direction="row"
+                                  spacing={1.4}
+                                  sx={{ paddingLeft: "14px" }}
                                 >
-                                  {row.icon}
+                                  <Stack
+                                    direction="column"
+                                    justifyContent="center"
+                                  >
+                                    {row.icon}
+                                  </Stack>
+                                  <Typography className="list-item-text">
+                                    {row.subName}
+                                  </Typography>
                                 </Stack>
-                                <Typography className="list-item-text">
-                                  {row.subName}
-                                </Typography>
-                              </Stack>
-                            </ListItem>
-                          ))}
-                        </Stack>
-                      </Collapse>
-                    )}
-                </Fragment>
-              );
-            })}
-          </Stack>
+                              </ListItem>
+                            ))}
+                          </Stack>
+                        </Collapse>
+                      )}
+                  </Fragment>
+                );
+              })}
+            </Stack>
+          </Box>
         </Stack>
       </Stack>
     </Box>
